@@ -1,0 +1,64 @@
+body {
+    background-image: linear-gradient(#4682B4, #87CEEB);
+    background-color: #87CEEB;
+    background-repeat: repeat-x;
+}
+h1, h2 {
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 120px;
+    padding-bottom: 10px;
+}
+.primary-card {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #00182f4c;
+    width: 750px;
+    height: 770px;
+}
+.links {
+    margin: auto;
+    width: 500px;
+    background-color: #000000;
+    border: 1px solid #a9d5ff;
+    border-radius: 10px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+}
+@font-face {
+    font-family: 'segment7';
+    src: url('/font/segment7.ttf') format('truetype');
+}
+table {
+    margin: auto;
+}
+td {
+    padding: 5px;
+}
+.widget {
+    border: 1px solid #7acaec;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.socials img {
+    width: 32px;
+}
+#clock {
+    width: 165px;
+    height: 45px;
+    margin: auto;
+    text-align: center;
+    padding: 0 5px;
+    font-size: 46px;
+    font-family: 'segment7', 'Courier New', Courier, monospace;
+    background-color:#adb886;
+    color:#000000;
+}
+.activepage {
+    font-weight: bold;
+}
