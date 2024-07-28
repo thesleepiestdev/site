@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="primary-card">
+            <h1>june</h1>UNDER CONSTRUCTION!!!!1<br><br>
+            <div class="links">
+                <a class="nav-link" id="link-home" href="#">home</a> ~ 
+                <a class="nav-link" id="link-about" href="#">about</a> ~ 
+                <a class="nav-link" id="link-blog" href="#">blog</a> ~ 
+                <a href="mailto:2dcatgirlirl@tuta.io">contact</a> ~ 
+                <a class="nav-link" id="link-gallery" href="#">gallery</a> ~ 
+                <a href="https://2dcatgirlirl.atabook.org">guestbook</a>
+            </div><br>
+                <table>
+                    <td style="width:500px;" valign="top">
+                        <main>
+                            <div class="widget">
+                                <iframe id="main-iframe" src="home.html" frameborder="0"></iframe>
+                                <script src="js/home.js"></script>
+                            </div>
+                        </main>
+                    </td>
+                    <td style="width:230px;" valign="top">
+                        <div class="widget">
+                            The time is...
+                            <div id="clock">
+                                <script>
+                                    function displayTime() {
+                                        let dt = new Date();
+                                        document.getElementById("clock").innerHTML = `${dt.toLocaleTimeString()}`;
+                                    }
+                                    displayTime();
+                                    setInterval(displayTime, 1000);
+                                </script>
+                            </div>
+                        </div>
+                        <div class="widget socials">
+                                <h2>on the web</h2>
+                                <a href="https://twitch.tv/2dcatgirlirl"><img src="img/twitch.png" alt="Twitch" title="Twitch Stream - 2dcatgirlirl"></a>
+                                <a href="https://transfem.social/@2dcatgirlirl"><img src="img/transfemsocial.png" alt="Twitch" title="Fediverse - @2dcatgirlirl@transfem.social"></a>
+                                <a href="https://youtube.com/@2dcatgirlirl"><img src="img/yt.png" alt="YouTube" title="YouTube Channel - @2dcatgirlirl"></a>
+                        </div>
+                    </td>
+                </table>
+        </div>
+</body>
+</html>
