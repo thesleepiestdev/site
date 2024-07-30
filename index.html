@@ -7,7 +7,7 @@
 </head>
 <body>
         <div class="primary-card">
-            <div class="version">v0.0.2 - 2024-07-28</div>
+            <div class="version">v0.0.3 - 2024-07-30</div>
             <h1>june</h1>UNDER CONSTRUCTION!!!!1<br><br>
             <div class="links">
                 <a class="nav-link activepage" id="link-home" href="?page=home">home</a> ~ 
@@ -33,7 +33,11 @@
                                 <script>
                                     function displayTime() {
                                         let dt = new Date();
-                                        document.getElementById("clock").innerHTML = `${dt.toLocaleTimeString()}`;
+                                        let hours = dt.getHours();
+                                        let minutes = dt.getMinutes().toString().padStart(2, '0');
+                                        let seconds = dt.getSeconds().toString().padStart(2, '0');
+                                        
+                                        document.getElementById("clock").innerHTML = `${hours}:${minutes}:${seconds}`;
                                     }
                                     displayTime();
                                     setInterval(displayTime, 1000);
