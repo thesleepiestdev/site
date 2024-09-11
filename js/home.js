@@ -31,6 +31,8 @@ function getNewIframeSrc(linkId) {
       return '/blog/content.html';
     case 'link-gallery':
       return '/gallery/content.html';
+      case 'link-projects':
+        return '/projects/content.html';
     default:
       return '/content.html';
   }
