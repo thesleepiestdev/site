@@ -18,13 +18,7 @@ h1 {
     padding: 10px;
     background-color: #00182f4c;
     width: 750px;
-    height: 770px;
-}
-.version {
-    color: #ffffff37;
-    font-size: 9px;
-    text-align: left;
-    margin-bottom: -10px;
+    height: 800px;
 }
 .links {
     margin: auto;
@@ -72,4 +66,13 @@ td {
 }
 .activepage {
     font-weight: bold;
+}
+.version a {
+    text-decoration: none;
+    color: #ffffff37;
+}
+.version {
+    font-size: 9px;
+    text-align: left;
+    margin-bottom: -10px;
 }
