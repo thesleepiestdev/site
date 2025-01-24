@@ -22,7 +22,8 @@ h1 {
 }
 .links {
     margin: auto;
-    width: 500px;
+    width: fit-content;
+    padding: 0 10px 0 10px;
     background-color: #00000064;
     border: 1px solid #a9d5ff;
     border-radius: 5px;
