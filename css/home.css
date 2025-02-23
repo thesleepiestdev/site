@@ -8,9 +8,11 @@ h1, h2 {
     margin: 0;
 }
 h1 {
+    clear: both;
+    position: relative;
+    top: -15px;
     text-align: center;
     font-size: 120px;
-    padding-bottom: 10px;
 }
 .primary-card {
     text-align: center;
@@ -18,7 +20,7 @@ h1 {
     padding: 10px;
     background-color: #00182f4c;
     width: 750px;
-    height: 800px;
+    height: 900px;
 }
 .links {
     margin: auto;
@@ -51,6 +53,20 @@ td {
 .socials img {
     width: 32px;
 }
+.pixel img {
+    image-rendering: pixelated;
+}
+.navlink {
+    height: 230px;
+    display: block;
+}
+.navlink iframe { 
+    position: relative;
+    top: 50%; /* move the image down by half its own height */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); /* adjust the vertical position of the image */
+}
 #clock {
     background: linear-gradient(#adb886, #8e976e) padding-box, linear-gradient(rgb(151, 151, 151), rgb(115, 115, 115)) border-box;
     border-radius: 10px;
@@ -61,6 +77,7 @@ td {
     margin: auto;
     text-align: center;
     padding: 0 5px;
+    margin-bottom: 5px;
     font-size: 46px;
     font-family: 'segment7', 'Courier New', Courier, monospace;
     color:#000000ab;
@@ -76,4 +93,7 @@ td {
     font-size: 9px;
     text-align: left;
     margin-bottom: -10px;
+}
+.flags {
+    float: right;
 }

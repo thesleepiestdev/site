@@ -6,5 +6,6 @@ h1 {
 }
 em {
     display: block;
-    margin-bottom: 10px;
+    text-align: center;
+    margin: auto;
 }

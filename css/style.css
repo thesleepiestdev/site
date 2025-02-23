@@ -5,3 +5,7 @@ body {
 a {
     color: #ffffff;
 }
+h1 {
+    text-align: center;
+    margin: auto;
+}
