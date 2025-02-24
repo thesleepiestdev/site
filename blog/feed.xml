@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>june's blog</title>
+  <description>personal updates and site news</description>
+  <link>https://junewastaken.nekoweb.org/blog</link>
+  <lastBuildDate>
+    Mon, 24 Feb 2025 18:49 +0000
+  </lastBuildDate>
+  <ttl>86400</ttl>
+  
+  <item>
+    <title>dusting things off</title>
+    <description>
+      <p>extremely slowly, but steadily, i have been chipping away at this webpage, and it's getting close to a point where i'd actually consider sharing it places.</p><p>a lot has changed, but a lot has also stayed the same, hopefully for the better. this is a completely new format for me and it is just an experiment at the end of the day!</p>
+    </description>
+    <link>https://junewastaken.nekoweb.org/blog/2025/02/23/dusting-things-off</link>
+    <pubDate>
+      Sun, 23 Feb 2025 21:30 +0000
+    </pubDate>
+  </item>
+
+  <item>
+    <title>hello world</title>
+    <description>
+      site v0.0.1 done, delighted with the progress so far, i'm going to play some games then sleep
+    </description>
+    <link>https://junewastaken.nekoweb.org/blog/2024/07/28/hello-world/</link>
+    <pubDate>
+      Sun, 28 Jul 2024 19:58 +0000
+    </pubDate>
+  </item>
+</channel>
+</rss>

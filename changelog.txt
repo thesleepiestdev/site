@@ -1,0 +1,45 @@
+v0.0.8 (2025-02-24)
+ + added photos to gallery (finally)
+ + added rss feed for blog
+ + added changelog to site
+ + added title and embed info
+ + added new 88x31
+ + added discord proof-of-ownership
+ ~ fixed external links from home page
+
+v0.0.7 (2025-02-23)
+ + added flags on the top right
+ + added welcome text
+ + added back the guestbook
+ + added navlink ads
+ + added new 88x31
+ + added new blog post
+ ~ adjusted some css
+ ~ made 88x31 buttons use nearest neighbor scaling
+ ~ made subtitle shift through variations
+ - removed about page
+
+v0.0.6 (2025-01-24)
+ + added 'AI Upscales' project
+ ~ updated external links
+ ~ adjusted some text
+
+v0.0.5 (2024-09-11)
+ + addded projects page
+
+v0.0.4 (2024-09-11)
+ ~ fixed main card height
+ ~ made version number link to GitHub repo
+
+v0.0.3 (2024-07-30)
+ ~ forced clock to display 24 hour time
+
+v0.0.2 (2024-07-28)
+ + added some redirects
+ + added site background
+ + added blog
+ + wrote first blog post
+ + added 88x31 buttons
+
+v0.0.1 (2024-07-28)
+ ~ site's intial creation
