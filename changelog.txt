@@ -1,3 +1,8 @@
+v0.0.9 (2025-03-06)
+ + added 88x31 button
+ ~ adjusted height of main box to match side widgets
+ ~ adjusted css to make scrollbar on other browsers/platforms appear similar to how it does in firefox on linux
+
 v0.0.8 (2025-02-24)
  + added photos to gallery (finally)
  + added rss feed for blog
