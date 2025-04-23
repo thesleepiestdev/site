@@ -4,6 +4,14 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
 }
+marquee {
+    border-radius: 5px;
+    background-color: black;
+    font-weight: bold;
+    border: 1px solid #a9d5ff;
+    width: 735px;
+    height: 24px;
+}
 h1, h2 {
     margin: 0;
 }
@@ -61,8 +69,11 @@ footer ul {
     image-rendering: pixelated;
 }
 .navlink {
-    height: 230px;
+    height: 190px;
     display: block;
+}
+.coolsites {
+    height: 236px;
 }
 .navlink iframe { 
     position: relative;

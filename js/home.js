@@ -1,6 +1,8 @@
 const iframe = document.getElementById('main-iframe');
 const navbarLinks = document.querySelectorAll('.links .nav-link');
 
+
+
 let previousLinkId;
 
 // Function to update the iframe source and active link
