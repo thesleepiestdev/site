@@ -9,3 +9,6 @@ em {
     text-align: center;
     margin: auto;
 }
+img {
+    max-width: 470px;
+}
