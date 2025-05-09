@@ -1,5 +1,7 @@
 body {
+    margin: auto;
     background-color: #051c3b7b;
+    max-width: 790px;
 }
 h1 {
     margin-bottom: 0px;
@@ -11,4 +13,8 @@ em {
 }
 img {
     max-width: 470px;
+}
+figure {
+    margin: auto;
+    text-align: center;
 }

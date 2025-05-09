@@ -1,46 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
-<channel>
-  <title>june's blog</title>
-  <description>personal updates and site news</description>
-  <link>https://junewastaken.nekoweb.org/blog</link>
-  <lastBuildDate>
-    Sun, 23 Apr 2025 14:00 +0000
-  </lastBuildDate>
-  <ttl>86400</ttl>
-  
-  <item>
-    <title>least queer linux user</title>
-    <description>
-      <p><a href="img1.jpg"><img src="img1a.jpg" alt="photo of a person resting their legs on their desk pc setup, wearing pink striped thigh highs, a pink skirt and pink t-shirt and collar. four computers can be seen. from left to right, a macbook air m1, a desktop pc running windows 10 connected to a 32 inch 4K monitor, a desktop pc running arch linux connected to a 27 inch curved 180hz 1440p monitor, and a gaming laptop running windows 10, connected to a 22 inch touch-screen 1080p monitor."></a><br>meow :3</p><p>soo.. my skirt arrived today and i had the house to myself for a little bit, so i decided to wear my cutest linux attire~ >w<</p><p>i also posted this image on <a href="https://lemmy.blahaj.zone/post/24972047">the Blahaj.zone lemmy</a> but seemingly managed to break the site on my first post, the preview is broken >.<</p>
-    </description>
-    <link>https://junewastaken.nekoweb.org/blog/2025/04/23/least-queer-linux-user</link>
-    <pubDate>
-      Sun, 23 Apr 2025 14:00 +0000
-    </pubDate>
-  </item>
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>june's blog</title>
+    <link>https://junewastaken.nekoweb.org/blog</link>
+    <atom:link href="https://junewastaken.nekoweb.org/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>personal updates and site news</description>
+    <pubDate>Wed, 23 Apr 2025 14:00:00 +0000</pubDate>
+    <lastBuildDate>Wed, 23 Apr 2025 14:00:00 +0000</lastBuildDate>
+    <language>en-ca</language>
+    <ttl>86400</ttl>
+    
+    <item>
+      <title>least queer linux user</title>
+    <dc:creator>june</dc:creator>
+      <link>https://junewastaken.nekoweb.org/blog/2025/04/23/least-queer-linux-user</link>
+      <guid>https://junewastaken.nekoweb.org/blog/2025/04/23/least-queer-linux-user</guid>
+      <description><![CDATA[<a href="https://junewastaken.nekoweb.org/blog/2025/04/23/least-queer-linux-user/img1.jpg"><img src="https://junewastaken.nekoweb.org/blog/2025/04/23/least-queer-linux-user/img1a.jpg" alt="photo of june resting her legs on her desk pc setup, wearing pink striped thigh highs, a pink skirt and pink t-shirt and collar. four computers can be seen. from left to right, a macbook air m1, a desktop pc running windows 10 connected to a 32 inch 4K monitor, a desktop pc running arch linux connected to a 27 inch curved 180hz 1440p monitor, and a gaming laptop running windows 10, connected to a 22 inch touch-screen 1080p monitor."/></a><br/>meow :3<p>soo.. my skirt arrived today and i had the house to myself for a little bit, so i decided to wear my cutest linux attire~ &gt;w&lt;</p><p>i also posted this image on <a href="https://lemmy.blahaj.zone/post/24972047">the Blahaj.zone lemmy</a> but seemingly managed to break the site on my first post, the preview is broken &gt;.&lt;</p>]]></description>
+      <pubDate>Wed, 23 Apr 2025 14:00 +0000</pubDate>
+    </item>
 
-  
-  <item>
-    <title>dusting things off</title>
-    <description>
-      <p>extremely slowly, but steadily, i have been chipping away at this webpage, and it's getting close to a point where i'd actually consider sharing it places.</p><p>a lot has changed, but a lot has also stayed the same, hopefully for the better. this is a completely new format for me and it is just an experiment at the end of the day!</p>
-    </description>
-    <link>https://junewastaken.nekoweb.org/blog/2025/02/23/dusting-things-off</link>
-    <pubDate>
-      Sun, 23 Feb 2025 21:30 +0000
-    </pubDate>
-  </item>
+    
+    <item>
+      <title>dusting things off</title>
+    <dc:creator>june</dc:creator>
+      <description><![CDATA[extremely slowly, but steadily, i have been chipping away at this webpage, and it's getting close to a point where i'd actually consider sharing it places.<br/>a lot has changed, but a lot has also stayed the same, hopefully for the better. this is a completely new format for me and it is just an experiment at the end of the day!]]></description>
+      <link>https://junewastaken.nekoweb.org/blog/2025/02/23/dusting-things-off</link>
+      <guid>https://junewastaken.nekoweb.org/blog/2025/02/23/dusting-things-off</guid>
+      <pubDate>Sun, 23 Feb 2025 21:30:00 +0000</pubDate>
+    </item>
 
-  <item>
-    <title>hello world</title>
-    <description>
-      site v0.0.1 done, delighted with the progress so far, i'm going to play some games then sleep
-    </description>
-    <link>https://junewastaken.nekoweb.org/blog/2024/07/28/hello-world/</link>
-    <pubDate>
-      Sun, 28 Jul 2024 19:58 +0000
-    </pubDate>
-  </item>
-</channel>
-</rss>
+    <item>
+      <title>hello world</title>
+    <dc:creator>june</dc:creator>
+      <description><![CDATA[site v0.0.1 done, delighted with the progress so far, i'm going to play some games then sleep]]></description>
+      <link>https://junewastaken.nekoweb.org/blog/2024/07/28/hello-world/</link>
+      <guid>https://junewastaken.nekoweb.org/blog/2024/07/28/hello-world/</guid>
+      <pubDate>Sun, 28 Jul 2024 19:58:00 +0000</pubDate>
+    </item>
+  </channel>
+  </rss>

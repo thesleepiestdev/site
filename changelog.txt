@@ -1,3 +1,8 @@
+v0.1.1 (2025-05-09)
+ + wrote my longest blog post yet
+ ~ fixed various blog issues including broken RSS feed
+ ~ updated an 88x31 link
+
 v0.1.0 (2025-04-23)
  + added music player
  + added another 88x31
