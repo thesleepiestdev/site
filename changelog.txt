@@ -1,3 +1,7 @@
+v0.1.2 (2025-05-10)
+ + added a link to the home page for people who got to my site from a blog post hotlink
+ + added a hit counter and follow counter
+
 v0.1.1 (2025-05-09)
  + wrote my longest blog post yet
  ~ fixed various blog issues including broken RSS feed

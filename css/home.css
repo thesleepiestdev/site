@@ -44,6 +44,10 @@ h1 {
     font-family: 'segment7';
     src: url('/font/segment7.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'arcade_i';
+    src: url('/font/arcade_i.ttf') format('truetype');
+}
 table {
     margin: auto;
 }
@@ -111,4 +115,12 @@ footer ul {
 }
 .flags {
     float: right;
+}
+.visitors {
+    background-color: #000;
+    color: #00ff00;
+    font-weight: bold;
+    padding: 1px;
+    font-family:'arcade_i', monospace;
+    font-size: 24px;
 }
