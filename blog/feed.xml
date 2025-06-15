@@ -2,8 +2,8 @@
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>june's blog</title>
-    <link>https://junewastaken.nekoweb.org/blog</link>
-    <atom:link href="https://junewastaken.nekoweb.org/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://june.ie/blog</link>
+    <atom:link href="https://june.ie/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>personal updates and site news</description>
     <pubDate>Fri, 09 May 2025 22:41:00 +0000</pubDate>
     <lastBuildDate>Fri, 09 May 2025 22:41:00 +0000</lastBuildDate>
