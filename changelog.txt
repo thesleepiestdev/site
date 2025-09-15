@@ -1,3 +1,6 @@
+v0.1.6 (2025-09-15)
+ ~ changed branding to reflect new purpose of site. this site will be rebuilt from the ground up soon!
+ ~ moved from june.ie to iamsoph.ie
 v0.1.5 (2025-06-15)
  + added privacyguides 88x31
  ~ moved from junewastaken.nekoweb.org to june.ie

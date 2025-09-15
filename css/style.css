@@ -9,6 +9,9 @@ h1 {
     text-align: center;
     margin: auto;
 }
+.logo {
+    font-size: 100px;
+}
 ::-webkit-scrollbar {
     width: 3px;
 }
