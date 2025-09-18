@@ -1,0 +1,200 @@
+<head>
+<style>
+*{margin:0;padding:0;}
+.embed-container{position:relative;height:100vh;overflow:hidden;}
+.embed-container iframe, .embed-container object, .embed-container embed {position:absolute;top:0;left:0;width:100%;height: 100%;}
+.logo{ position:absolute;top:20px;left:20px;}
+html{overflow:scroll;}
+::-webkit-scrollbar{width:0px;background:transparent;}
+    </style>
+  </head>
+
+  <body>
+    <div class="embed-container">
+      <div id="player"></div>
+    </div>
+    <script>
+      var urlParams = new URLSearchParams( window.location.search );
+      var SETTINGS  = {
+        playlist_id: urlParams.get('playlist') || 'PL291D6ScLmyLL7lzp9oeHsQEffSPqrUzA', // update with own playlist
+        random     : 1,
+        autoplay   : 1,
+        loop       : 1,
+        index      : 0,
+        startSeconds: 0,
+      };
+
+      // -----------------------------------------------------------------------
+
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // -----------------------------------------------------------------------
+
+      var player;
+      var fadeInDuration = 0;   // Fade-in duration in milliseconds (10 seconds)
+      var fadeOutDuration = 0;  // Fade-out duration in milliseconds
+      var fadeInInterval;
+      var fadeOutInterval;
+
+      function onYouTubeIframeAPIReady()
+      {
+
+        console.log('onYouTubeIframeAPIReady()');
+
+        // ---------------------------------------------------------------------
+
+        player = new YT.Player('player', {
+
+          height: '540',
+          width : '960',
+
+          // -------------------------------------------------------------------
+
+          playerVars: {
+            version : 3,
+            autoplay: SETTINGS.autoplay,
+            loop    : SETTINGS.loop,
+            index   : SETTINGS.index,
+            rel     : 0,
+            start   : SETTINGS.startSeconds, // Use startSeconds parameter
+          },
+
+          // -------------------------------------------------------------------
+
+          events: {
+            'onReady'      : onPlayerReady,
+            'onStateChange': onPlayerStateChange,
+          },
+
+        });
+
+      }
+      // onYouTubeIframeAPIReady()
+
+      // -----------------------------------------------------------------------
+
+      var playlistArray;
+      var playListArrayLength;
+      var maxNumber;
+
+      var oldNumber = SETTINGS.index;
+      var NewNumber = SETTINGS.index;
+
+      function newRandomNumber()
+      {
+
+        oldNumber = NewNumber;
+        NewNumber = Math.floor( Math.random() * maxNumber );
+
+        // ---------------------------------------------------------------------
+
+        return ( NewNumber === oldNumber ) ? newRandomNumber() : NewNumber;
+
+      }
+      // newRandomNumber()
+
+      // -----------------------------------------------------------------------
+
+      function onPlayerReady( event )
+      {
+
+        console.log('onPlayerReady()');
+
+        player.loadPlaylist({
+          'listType': 'playlist',
+          'list'    : SETTINGS.playlist_id,
+          'startSeconds': SETTINGS.startSeconds, // Add startSeconds parameter
+          'autoplay': SETTINGS.autoplay // Ensure autoplay is set
+        });
+
+        player.setVolume(10); // Start with volume at 1
+
+      }
+      // onPlayerReady()
+
+      // -----------------------------------------------------------------------
+
+      var firstLoad = true;
+      var checkTimeInterval;
+      var timeToNextVid = 0; // Time in seconds before the end to move to the next vid
+      var skipBeginning = false;
+
+      function onPlayerStateChange( event )
+      {
+
+        console.log('onPlayerStateChange()');
+
+        if ( ! SETTINGS.random )
+        {
+          return;
+        }
+
+        // ---------------------------------------------------------------------
+
+        if ( event.data == YT.PlayerState.ENDED )
+        {
+          player.playVideoAt(newRandomNumber());
+          skipBeginning = true; // Set flag to skip the beginning
+        }
+        else if ( event.data == YT.PlayerState.PLAYING )
+        {
+          if ( firstLoad )
+          {
+            firstLoad           = false;
+            playlistArray       = player.getPlaylist();
+            playListArrayLength = playlistArray.length;
+            maxNumber           = playListArrayLength;
+            NewNumber           = newRandomNumber();
+
+            // Generate a random index to start with
+            var randomIndex = Math.floor(Math.random() * playListArrayLength);
+
+            // Start with a random vid
+            player.playVideoAt(randomIndex);
+          }
+
+          if (skipBeginning) {
+            player.seekTo(SETTINGS.startSeconds, true);
+            skipBeginning = false; // Reset flag
+          }
+
+          // Clear any existing interval
+          clearInterval(checkTimeInterval);
+
+          // Set up an interval to check the remaining time
+          checkTimeInterval = setInterval(function() {
+            var currentTime = player.getCurrentTime();
+            var duration = player.getDuration();
+            var remainingTime = duration - currentTime;
+
+
+            // Skip to next vid when remaining time is less than or equal to timeToNextVid
+            if (remainingTime <= timeToNextVid) {
+              clearInterval(fadeOutInterval);
+              clearInterval(checkTimeInterval);
+              player.playVideoAt(newRandomNumber());
+              skipBeginning = true;
+            }
+          }, 1000); // Check every second
+
+          clearInterval(fadeOutInterval);
+
+
+        }
+        else
+        {
+          // Clear the interval if the player is not playing
+          clearInterval(checkTimeInterval);
+        }
+
+      }
+
+    </script>
+    <span class="logo"><img src="thistv2hdDOG.png" width="100%" height="100%"></span>
+  </body>
+
+</html>
