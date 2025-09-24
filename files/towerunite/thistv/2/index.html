@@ -22,7 +22,7 @@ html{overflow:scroll;}
     index: 0,
     startSeconds: 0,
   };
-  var videoDurations = [8, 1327, 813, 59, 186, 31, 236, 34, 31];
+  var videoDurations = [27, 1345, 31, 59, 27, 813, 31, 236, 27, 839, 186, 34, 27, 1948, 31, 31, 596, 47, 50, 27, 1428, 31, 435];
 
   var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
@@ -88,6 +88,7 @@ function syncWithUTCTime() {
 
 
   function onPlayerStateChange(event) {
+	  player.setVolume(10);
     if (event.data == YT.PlayerState.ENDED) {
       syncWithUTCTime();
     }
