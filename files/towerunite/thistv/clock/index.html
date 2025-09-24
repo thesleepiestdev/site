@@ -1,0 +1,6 @@
+<style>@font-face{font-family:'Noto Sans';src:url(./NotoLatin.woff2)format('woff2');}
+html,body{padding:0;margin:0}
+video{position:fixed;z-index:-99}
+.clock{font-family:"Noto Sans";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;font-weight:bold;font-size:10em;color:rgba(255,255,255,0.45)}
+img{position:absolute;left:47%;bottom:4%}</style><div id="clock" class="clock">clock</div><video width="100%" id="music" autoplay loop><source src="ripplesinapond.webm" type="video/webm"></video><video id="bg" autoplay loop><source src="bg.webm" type="video/webm"></video><img src="logo.png"><script>const music=document.getElementById('music');const bg=document.getElementById('bg');music.volume=0.1;function displayTime(){let dt=new Date();let hours=dt.getHours().toString().padStart(2,'0');let minutes=dt.getMinutes().toString().padStart(2,'0');let seconds=dt.getSeconds().toString().padStart(2,'0');document.getElementById("clock").innerHTML=`${hours}:${minutes}`;document.getElementById('bg').play()}
+displayTime();setInterval(displayTime,1000);</script>
