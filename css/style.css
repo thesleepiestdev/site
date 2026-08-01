@@ -1,29 +1,116 @@
+body, a {
+    color: white;
+}
 body {
-    color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-a {
-    color: #ffffff;
-}
-h1 {
+    font-family: Verdana, sans-serif;
     text-align: center;
     margin: auto;
+    background-color: #afceea;
 }
-.logo {
-    font-size: 100px;
+a {
+    font-weight: bold;
 }
-::-webkit-scrollbar {
-    width: 3px;
+
+.bgimg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
-::-webkit-scrollbar-thumb {
-    background:  rgba(0,0,0,0.3);
-    border-radius: 5px;
-}
-.fullscreen {
-    display: none;
-}
-@media (min-width: 501px) {
-    .fullscreen {
-        display: block;
+
+.main-container {
+    margin: auto;
+    max-width: 1010px;
+    background-color: #1e3e76;
+    @supports (background-image: linear-gradient(to bottom, #111, #111)) {
+        background-color: transparent;
     }
+}
+
+.main, .side {
+    border: 1px solid #7da8f3;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+.content {
+    overflow: hidden;
+}
+
+.eightyeightbythirtyone img {
+    image-rendering: pixelated !important;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+@media (max-width:1023px)  { /* phone */
+    body {
+        font-size: 1.25em;
+        background-color: #275ab2;
+        @supports (background-image: linear-gradient(to bottom, #111, #111)) {
+            background-image: linear-gradient(to bottom, #29509d, #4b7fd2, #afceea);
+            background-repeat: no-repeat;
+            background-color: #afceea;
+        }
+    }
+    .main-container {
+        border: 0;
+    }
+    .main, .side {
+        width: 95%;
+        background-color: #1e3e76;
+        margin: 10px auto;
+        border: 3px solid #7da8f3;
+    }
+    .bgimg {
+        display: none;
+    }
+    .footer {
+        width: 95%;
+        border: 3px solid #7da8f3;
+        border-radius: 10px;
+        margin: 10px auto;
+        padding-bottom: 10px;
+        background-color: #1e3e76;
+    }
+}
+
+@media (min-width:1024px) { /* desktop */
+    body {
+        background-color: #afceea;
+    }
+    .main-container {
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid #7da8f3; background-color: #00000060;
+    
+    }
+
+    .main {
+        width: 685px;
+        float: left;
+    }
+    .side {
+        width: 284px;
+        margin-left: 710px;
+    }
+    .footer {
+        margin: auto;
+        width: 1000px;
+    }
+    @supports (backdrop-filter: blur(1px)) {
+        .main-container {
+            background-color: #00000060;
+            backdrop-filter: blur(6px);
+        }
+    }
+    .bgimg {
+        display: block !important;
+    }
+}
+
+a img {
+    border: none;
 }
